@@ -1,7 +1,7 @@
 
-package S07_04JoseCama;
+package S07_04;
 
-public class Main_S07_04JoseCama {
+public class Main_S07_04 {
     public static void main(String[] args) {
         // Crear un objeto de la clase "persona1"
         persona1_04 personaUno = new persona1_04("Juan", 30);

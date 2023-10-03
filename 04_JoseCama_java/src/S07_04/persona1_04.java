@@ -1,5 +1,5 @@
 
-package S07_04JoseCama;
+package S07_04;
 
 public class persona1_04 {
     private String nombre;
