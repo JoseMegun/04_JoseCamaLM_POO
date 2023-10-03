@@ -14,6 +14,9 @@ public class Main_S07v2_04 {
         objPersona.edad();
         objPersona.platillo();
         
+        int valorAño = objPersona.año();
+        System.out.println("El valor del año es: " + valorAño);
+        
         double hora = objPersona.hora();
         System.out.println("La hora es: " + hora);
         
