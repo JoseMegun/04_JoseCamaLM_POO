@@ -1,19 +1,28 @@
 
 package S11_04_E01;
 
-public class Empleado_04 {
+public class Empleado_04 extends Persona_04 {
     
-    //atributos
+    // Clase Hija
+    // Atributos
     String empresa;
+    int dni;
     int tiempoTrabajo;
-    
-    
-    //metodos
-    public void trabajar(){  
-        
+
+    // Constructor
+    public Empleado_04(String nombre, String apellido, String empresa, int dni, int tiempoTrabajo) {
+        super(nombre, apellido);
+        this.empresa = empresa;
+        this.dni = dni;
+        this.tiempoTrabajo = tiempoTrabajo;
     }
-    
-    public void saludar(){
-        
+
+    // Métodos
+    public void trabajar() {
+        System.out.println(nombre + " " + apellido + " con DNI " + dni + " está trabajando en " + empresa + " durante " + tiempoTrabajo + " años.");
+    }
+
+    public void saludar() {
+        System.out.println(nombre + " " + apellido + " con DNI " + dni + " está saludando.");
     }
 }

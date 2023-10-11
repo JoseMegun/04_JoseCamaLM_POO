@@ -1,20 +1,28 @@
 
 package S11_04_E01;
 
-public class Maestro_04 {
+public class Maestro_04 extends Persona_04 {
     
-//atributos
-    String carrera;
+    // Clase Hija
+    // Atributos
+    String materia;
+    String colegio;
     int experiencia;
-    
-    
-    //metodos
-    public void capacitar(){  
-        
+
+    // Constructor
+    public Maestro_04(String nombre, String apellido, String materia, String colegio, int experiencia) {
+        super(nombre, apellido);
+        this.materia = materia;
+        this.colegio = colegio;
+        this.experiencia = experiencia;
     }
-    
-    public void aprender(){
-        
+
+    // Métodos
+    public void enseñar() {
+        System.out.println(nombre + " " + apellido + " está enseñando " + materia + " en el colegio " + colegio + ".");
     }
-    
+
+    public void investigar() {
+        System.out.println(nombre + " " + apellido + " está investigando en su campo con su experiencia de " + experiencia + " años.");
+    }
 }
