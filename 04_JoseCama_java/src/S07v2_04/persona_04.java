@@ -1,54 +1,55 @@
-
 package S07v2_04;
 
-public class persona_04 {
+// Jose Megun Cama La Madrid
 
-//Atributos
+public class persona_04 {
+    // Atributos
     String nombre;
     int edd;
     String comida;
-    
-    //Metodos
-    public void saludo(){
+
+    // Metodos
+    public void saludo() {
         System.out.println("Buenas tardes señor o señorita: " + nombre);
     }
-    
-    public void edad(){
-        System.out.println("su edad es: " + edd);
+
+    public void edad() {
+        System.out.println("Su edad es: " + edd);
     }
-    
-    public void platillo(){
-        System.out.println("tu plato favoirto es: " + comida);
+
+    public void platillo() {
+        System.out.println("Tu plato favorito es: " + comida);
     }
-    
-    //Sobrecarga de metodos
-    public void ejercicio(){
+
+    // Sobrecarga de metodos
+    public void ejercicio() {
+        System.out.println("Realizas algún ejercicio.");
     }
-    
-    public void ejercicio(String nombre){
-        System.out.println("Tu realizas ejercicio: " + nombre);
+
+    public void ejercicio(String tipoEjercicio) {
+        System.out.println("Realizas ejercicio de tipo: " + tipoEjercicio);
     }
-    
-    //Metodos con valores de retorno
-    public int año(){
+
+    // Métodos con valores de retorno (3 tipos de datos diferentes)
+    public int año() {
         return 20;
     }
-    
-    public String texto(){
-        return "Espero que tenga un buen dia";
+
+    public String texto() {
+        return "Espero que tengas un buen día";
     }
-    
-    public double hora(){
+
+    public double hora() {
         return 14.20;
     }
-    
-    //Metodos con parametros y argumentos
-    public void pregEdad(int edd){
+
+    // Métodos con parámetros y argumentos
+    public void pregEdad(int edad) {
+        System.out.println("La edad proporcionada es: " + edad);
     }
-    
-    public void pregNombre(String nombre){
-        
+
+    public void pregNombre(String nombrePersona) {
+        System.out.println("El nombre proporcionado es: " + nombrePersona);
     }
-    
 }
 
